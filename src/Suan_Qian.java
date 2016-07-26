@@ -21,6 +21,7 @@ public class Suan_Qian {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+//<<<<<<< HEAD
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Start? Enter \"Quit\" to quit");
 		String s = scan.nextLine();
@@ -29,6 +30,10 @@ public class Suan_Qian {
 			System.out.println("Continue? Enter \"Quit\" to quit");
 			s = scan.nextLine();
 		}
+//=======
+		System.out.println("Hello World");
+		
+//>>>>>>> branch 'master' of https://github.com/rickat/Project_ZhanGua.git
 	}
 	
 	private static void get_your_luck() {
