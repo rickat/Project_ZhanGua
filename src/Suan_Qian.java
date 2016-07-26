@@ -6,6 +6,9 @@
  * @author ylh96
  *
  */
+
+import  java.util.Random ;
+
 public class Suan_Qian {
 
 	/**
@@ -14,6 +17,13 @@ public class Suan_Qian {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
+	}
+	
+	private int choose_stick(){
+		Random random = new Random();
+		int num_sticks = random.nextInt(100);
+		
+		return num_sticks;
 	}
 
 }
