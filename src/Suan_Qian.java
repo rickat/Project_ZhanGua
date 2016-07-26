@@ -9,6 +9,7 @@
 
 import java.util.HashMap;
 import  java.util.Random ;
+import java.util.Scanner;
 
 
 
@@ -19,6 +20,17 @@ public class Suan_Qian {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Start? Enter \"Quit\" to quit");
+		String s = scan.nextLine();
+		while (s.charAt(0) != 'Q' && s.charAt(0) != 'q') {
+			get_your_luck();
+			System.out.println("Continue? Enter \"Quit\" to quit");
+			s = scan.nextLine();
+		}
+	}
+	
+	private static void get_your_luck() {
 		Random random = new Random();
 		HashMap<Integer, String> m = new HashMap<Integer, String>();
 		for (int i = 0; i < 100; i++) {
