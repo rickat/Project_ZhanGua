@@ -14,6 +14,7 @@ import java.util.Scanner;
 
 
 public class Suan_Qian {
+	
 	public static final String[] MEANING = {"very good", "good", "okay", "cautious", "very cautious"};
 	/**
 	 * @param args
