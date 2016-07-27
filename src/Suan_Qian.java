@@ -38,6 +38,13 @@ public class Suan_Qian {
 	
 	private static void get_your_luck() {
 		Random random = new Random();
+		int rand = random.nextInt(5);
+		String result = MEANING[rand];
+		System.out.println("Your luck is: " + result);
+	}
+	
+	/*private static void get_your_luck() {
+		Random random = new Random();
 		HashMap<Integer, String> m = new HashMap<Integer, String>();
 		for (int i = 0; i < 100; i++) {
 			int luck = random.nextInt(5);
@@ -46,5 +53,5 @@ public class Suan_Qian {
 		int num_sticks = random.nextInt(100);
 		String result = m.get(num_sticks);
 		System.out.println("Your luck is: " + result);
-	}
+	}*/
 }
