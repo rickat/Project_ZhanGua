@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package javaapplication1;
+package zhan_gua_gui;
 
 /**
  *
  * @author ylh96
  */
-public class zhan_gua_gui extends javax.swing.JFrame {
+public class zhan_gua_gui_o extends javax.swing.JFrame {
 
     /**
-     * Creates new form zhan_gua_gui
+     * Creates new form zhan_gua_gui_o
      */
-    public zhan_gua_gui() {
+    public zhan_gua_gui_o() {
         initComponents();
     }
 
@@ -185,20 +185,21 @@ public class zhan_gua_gui extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(zhan_gua_gui.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(zhan_gua_gui_o.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(zhan_gua_gui.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(zhan_gua_gui_o.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(zhan_gua_gui.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(zhan_gua_gui_o.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(zhan_gua_gui.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(zhan_gua_gui_o.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new zhan_gua_gui().setVisible(true);
+                new zhan_gua_gui_o().setVisible(true);
             }
         });
     }
