@@ -1,8 +1,11 @@
+import javax.swing.*;
+import java.awt.*;
+
 /**
  *
  * @author ylh96
  */
-public class Zhan_Gua_Main extends javax.swing.JFrame {
+public class Zhan_Gua_Main {
 
     /**
      * Creates new form zhan_gua_gui_o
@@ -18,20 +21,26 @@ public class Zhan_Gua_Main extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents() {
-
-        jDialog1 = new javax.swing.JDialog();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        jTextPane2 = new javax.swing.JTextPane();
-        jButton3 = new javax.swing.JButton();
-
+    public void initComponents() {
+    	mainFrame = new JFrame( "The Most Trustworthy Fortune Teller APP!");
+        jDialog1 = new JDialog(); //?
+        jButton1 = new JButton("Start");
+        jButton2 = new JButton("Exit");
+        jButton3 = new JButton("Reset");
+        jTextField1 = new JTextField();
+        jScrollPane3 = new JScrollPane(); //?
+        jTextPane2 = new JTextPane();
+        
+        JPanel buttonContainer = new JPanel();
+		buttonContainer.setLayout(new FlowLayout());
+		buttonContainer.add(jButton1);
+		buttonContainer.add(jButton2);
+		buttonContainer.add(jButton3);
+        
         jDialog1.setTitle("DIALOG");
         jDialog1.setAlwaysOnTop(true);
-
-        javax.swing.GroupLayout jDialog1Layout = new javax.swing.GroupLayout(jDialog1.getContentPane());
+       
+        GroupLayout jDialog1Layout = new GroupLayout(jDialog1.getContentPane());
         jDialog1.getContentPane().setLayout(jDialog1Layout);
         jDialog1Layout.setHorizontalGroup(
             jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -42,14 +51,14 @@ public class Zhan_Gua_Main extends javax.swing.JFrame {
             .addGap(0, 300, Short.MAX_VALUE)
         );
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setBackground(new java.awt.Color(0, 0, 0));
+        mainFrame.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        //mainFrame.setBackground(new java.awt.Color(0, 0, 0));
 
         jButton1.setBackground(new java.awt.Color(0, 0, 0));
         jButton1.setFont(new java.awt.Font("Chiller", 3, 96)); // NOI18N
         jButton1.setForeground(new java.awt.Color(240, 0, 0));
-        jButton1.setText("START");
-        jButton1.setToolTipText("");
+        //jButton1.setText("START");
+        //jButton1.setToolTipText("");
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton1MouseClicked(evt);
@@ -63,8 +72,8 @@ public class Zhan_Gua_Main extends javax.swing.JFrame {
 
         jButton2.setBackground(new java.awt.Color(240, 0, 0));
         jButton2.setFont(new java.awt.Font("Snap ITC", 3, 48)); // NOI18N
-        jButton2.setText("Exit");
-        jButton2.setToolTipText("");
+        //jButton2.setText("Exit");
+        //jButton2.setToolTipText("");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -86,16 +95,16 @@ public class Zhan_Gua_Main extends javax.swing.JFrame {
 
         jButton3.setBackground(new java.awt.Color(255, 0, 0));
         jButton3.setFont(new java.awt.Font("Chiller", 3, 60)); // NOI18N
-        jButton3.setText("RESET");
+        //jButton3.setText("RESET");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
+        //GroupLayout layout = new GroupLayout(mainFrame.getContentPane());
+        //mainFrame.getContentPane().setLayout(new FlowLayout());
+        /*layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -114,8 +123,8 @@ public class Zhan_Gua_Main extends javax.swing.JFrame {
                                 .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 364, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(171, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
+        );*/
+        /**layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(135, 135, 135)
@@ -129,9 +138,18 @@ public class Zhan_Gua_Main extends javax.swing.JFrame {
                     .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 101, Short.MAX_VALUE)
                     .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(82, 82, 82))
-        );
-
-        pack();
+        );*/
+        // add components into mainFrame
+        //mainFrame.add(jDialog1);
+        JOptionPane.showMessageDialog(mainFrame, "Please enter whatever you'd like to test");
+        mainFrame.getContentPane().add(buttonContainer, BorderLayout.SOUTH);
+        mainFrame.getContentPane().add(jTextField1, BorderLayout.NORTH);
+        //jScrollPane3.add(jDialog1);
+        mainFrame.getContentPane().add(jScrollPane3, BorderLayout.CENTER);
+        mainFrame.getContentPane().add(jTextPane2, BorderLayout.CENTER);
+        
+        mainFrame.pack();
+        mainFrame.setVisible(true);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -192,19 +210,20 @@ public class Zhan_Gua_Main extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Zhan_Gua_Main().setVisible(true);
+                new Zhan_Gua_Main();
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JDialog jDialog1;
-    private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextPane jTextPane2;
+    private JFrame mainFrame;
+    private JButton jButton1;
+    private JButton jButton2;
+    private JButton jButton3;
+    private JDialog jDialog1;
+    private JScrollPane jScrollPane3;
+    private JTextField jTextField1;
+    private JTextPane jTextPane2;
     // End of variables declaration//GEN-END:variables
 }
 
