@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package zhan_gua_gui;
 
 import java.util.Random;
 
@@ -41,4 +40,3 @@ public class Qian {
 	}
 
 }
-
