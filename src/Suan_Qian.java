@@ -38,7 +38,6 @@ public class Suan_Qian {
 		String result = MEANING[rand];
 		System.out.println("Your luck is: " + result);
 	}
-	
 	/*private static void get_your_luck() {
 		Random random = new Random();
 		HashMap<Integer, String> m = new HashMap<Integer, String>();
