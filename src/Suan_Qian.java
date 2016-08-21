@@ -47,7 +47,7 @@ public class Suan_Qian {
 			m.put(i, MEANING[luck]);
 		}
 		int num_sticks = random.nextInt(100);
-		String result = m.get(num_sticks);
+		String result = m.get(num_sticks);'
 		System.out.println("Your luck is: " + result);
 	}*/
 }
