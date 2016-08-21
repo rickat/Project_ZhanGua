@@ -21,7 +21,7 @@ public class Qian {
 	private String wish;
 	
 	/**
-	 * 
+	 * comments
 	 */
 	public Qian(String wish) {
 		// TODO Auto-generated constructor stub
