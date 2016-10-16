@@ -1,3 +1,4 @@
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -7,31 +8,26 @@
 import java.util.Random;
 
 /**
- * comments
- */
-
-/**
- * @author ylh96
+ * This is the model of Suan Qian GUI
+ * 
+ * @author Shen Wang, Yilun Hua
  *
  */
 public class Qian {
 
-	public static final String[] MEANING = {"very good", "good", "okay", "cautious", "very cautious"};
-	
+	public static final String[] MEANING = { "very good", "good", "okay", "cautious", "very cautious" };
+
 	private String wish;
-	
-	/**
-	 * comments
-	 */
+
 	public Qian(String wish) {
-		// TODO Auto-generated constructor stub
 		this.wish = wish;
 	}
-	
+
+	// return your luck
 	String return_message() {
 		return fortune_teller();
 	}
-	
+
 	private String fortune_teller() {
 		Random random = new Random();
 		int rand = random.nextInt(5);
