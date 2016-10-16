@@ -1,27 +1,23 @@
-/**
- * 
- */
 
 /**
- * @author ylh96
+ * This class will calculate your luck depend on your wish you entered
+ * @author Shen Wang, Yilun Hua
  *
  */
 
 import java.util.HashMap;
-import  java.util.Random ;
+import java.util.Random;
 import java.util.Scanner;
 
-
-
+/*
+ * Demo class without GUI function
+ * In other words, it is a skeleton of Suan_Qian program
+ */
 public class Suan_Qian {
-	
-	public static final String[] MEANING = {"very good", "good", "okay", "cautious", "very cautious"};
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
+	public static final String[] MEANING = { "very good", "good", "okay", "cautious", "very cautious" };
+
+	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Start? Enter \"Quit\" to quit");
 		String s = scan.nextLine();
@@ -31,22 +27,11 @@ public class Suan_Qian {
 			s = scan.nextLine();
 		}
 	}
-	
+
 	private static void get_your_luck() {
 		Random random = new Random();
 		int rand = random.nextInt(5);
 		String result = MEANING[rand];
 		System.out.println("Your luck is: " + result);
 	}
-	/*private static void get_your_luck() {
-		Random random = new Random();
-		HashMap<Integer, String> m = new HashMap<Integer, String>();
-		for (int i = 0; i < 100; i++) {
-			int luck = random.nextInt(5);
-			m.put(i, MEANING[luck]);
-		}
-		int num_sticks = random.nextInt(100);
-		String result = m.get(num_sticks);'
-		System.out.println("Your luck is: " + result);
-	}*/
 }
